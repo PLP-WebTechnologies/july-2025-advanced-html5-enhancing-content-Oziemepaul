@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Enhanced Form and Content</h1>
+        <nav>
+            <ul>
+                <li><a href="#form-section">Go to Form</a></li>
+                <li><a href="#content-section">Go to Content</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="content-section">
+            <h2>Well-structured Content</h2>
+            <p>This section demonstrates the use of lists, tables, and media to present information clearly.</p>
+
+            <h3>Important Features</h3>
+            <ul>
+                <li>Semantic HTML for accessibility.</li>
+                <li>HTML5 form attributes for enhanced user experience.</li>
+                <li>Client-side validation to improve data integrity.</li>
+            </ul>
+
+            <h3>Product Information Table</h3>
+            <table border="1">
+                <caption>Product Availability by Region</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Region A</th>
+                        <th scope="col">Region B</th>
+                        <th scope="col">Region C</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Widget X</th>
+                        <td>In Stock</td>
+                        <td>Out of Stock</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Gadget Y</th>
+                        <td>Out of Stock</td>
+                        <td>In Stock</td>
+                        <td>In Stock</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Example Media</h3>
+            <p>Here is an image demonstrating a concept:</p>
+            <figure>
+                <img src="./assets/godk.jpg" alt="Placeholder image for a concept" width="300" height="200">
+                <figcaption>A placeholder image to illustrate a point.</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section id="form-section">
+            <h2>A Complete HTML5 Form</h2>
+            <p>This form uses a variety of input fields and HTML5 attributes.</p>
+
+            <form action="#" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Paul Ozieme" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="paul.oz@example.com" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Information</legend>
+                    <div>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Username" autocomplete="username" required>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" autocomplete="new-password" required minlength="8">
+                    </div>
+                    <div>
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" autocomplete="new-password" required minlength="8">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Details</legend>
+                    <div>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" readonly>
+                    </div>
+                    <div>
+                        <label for="favorite-color">Favorite Color:</label>
+                        <input type="color" id="favorite-color" name="favorite-color">
+                    </div>
+                    <div>
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter" checked>
+                            Subscribe to newsletter?
+                        </label>
+                    </div>
+                    <div>
+                        <p>Preferred Contact Method:</p>
+                        <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                        <label for="contact-email">Email</label>
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone" required>
+                        <label for="contact-phone">Phone</label>
+                    </div>
+                    <div>
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Please enter your comments here..."></textarea>
+                    </div>
+                    <div>
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="" disabled selected>-- Select a country --</option>
+                            <option value="usa">United States</option>
+                            <option value="can">Canada</option>
+                            <option value="gbr">United Kingdom</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <button type="submit">Submit Form</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Enhanced Form Example. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
